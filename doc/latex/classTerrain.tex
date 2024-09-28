@@ -1,0 +1,56 @@
+\hypertarget{classTerrain}{}\doxysection{Terrain Class Reference}
+\label{classTerrain}\index{Terrain@{Terrain}}
+
+
+Classe gerant le terrain Cette classe contient la carte des murs/route/... et les checkpoints ainsi que les points de passage pour les IA.  
+
+
+
+
+{\ttfamily \#include $<$Terrain.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTerrain_a7160a06ab07a86ed97d23374405e8ef6}\label{classTerrain_a7160a06ab07a86ed97d23374405e8ef6}} 
+\mbox{\hyperlink{classTerrain_a7160a06ab07a86ed97d23374405e8ef6}{Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Coordonnees des points de passage pour les 2 IA. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a2f7f0a2aee54886324ccf48a6f321de0}\label{classTerrain_a2f7f0a2aee54886324ccf48a6f321de0}} 
+\mbox{\hyperlink{classTerrain_a2f7f0a2aee54886324ccf48a6f321de0}{$\sim$\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_af016a2adb9207024376cf0e7b9d05efe}\label{classTerrain_af016a2adb9207024376cf0e7b9d05efe}} 
+void \mbox{\hyperlink{classTerrain_af016a2adb9207024376cf0e7b9d05efe}{init\+Carte}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par defaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_ab0bd3529d8adc289ed7e87e2d79b4d87}\label{classTerrain_ab0bd3529d8adc289ed7e87e2d79b4d87}} 
+unsigned int \mbox{\hyperlink{classTerrain_ab0bd3529d8adc289ed7e87e2d79b4d87}{get\+CP}} () const
+\begin{DoxyCompactList}\small\item\em Recupere les coordonnees des points de passage et affiche de la route a la place. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a592fafba6f376f05bd1a31c82efbb2c3}\label{classTerrain_a592fafba6f376f05bd1a31c82efbb2c3}} 
+char \mbox{\hyperlink{classTerrain_a592fafba6f376f05bd1a31c82efbb2c3}{get\+Carte}} (int posX, int posY) const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de checkpoints. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_ab98fabee8e05f04963a1bcc6dd5cb90d}\label{classTerrain_ab98fabee8e05f04963a1bcc6dd5cb90d}} 
+char \mbox{\hyperlink{classTerrain_ab98fabee8e05f04963a1bcc6dd5cb90d}{get\+Carte}} (const \mbox{\hyperlink{classVect2D}{Vect2D}} \&V) const
+\begin{DoxyCompactList}\small\item\em Retourne la tuile de coordonnee posX, posY. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a08ac42c8fc09eeec86a08da79ff1615c}\label{classTerrain_a08ac42c8fc09eeec86a08da79ff1615c}} 
+void \mbox{\hyperlink{classTerrain_a08ac42c8fc09eeec86a08da79ff1615c}{set\+Carte}} (const std\+::string \&nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Retourne la tuile de position V. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a8cc2f2f28e3a922bc63a9baba93f389d}\label{classTerrain_a8cc2f2f28e3a922bc63a9baba93f389d}} 
+\mbox{\hyperlink{classVect2D}{Vect2D}} \mbox{\hyperlink{classTerrain_a8cc2f2f28e3a922bc63a9baba93f389d}{get\+Co}} (unsigned int v, unsigned int i) const
+\begin{DoxyCompactList}\small\item\em Charge la carte de a partir de son nom, nom\+\_\+fichier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a261dce4475e6c3d142d6dcb132afbf2a}\label{classTerrain_a261dce4475e6c3d142d6dcb132afbf2a}} 
+unsigned int \mbox{\hyperlink{classTerrain_a261dce4475e6c3d142d6dcb132afbf2a}{get\+Dernier\+Pt}} (unsigned int v) const
+\begin{DoxyCompactList}\small\item\em Retourne la position du points de passage i de la voiture v. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a7cee4521be252a1ebc1982a6b376bca9}\label{classTerrain_a7cee4521be252a1ebc1982a6b376bca9}} 
+void \mbox{\hyperlink{classTerrain_a7cee4521be252a1ebc1982a6b376bca9}{set\+Dernier\+Pt}} (unsigned int v)
+\begin{DoxyCompactList}\small\item\em Retourne le dernier checkpoint passee par la voiture v. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTerrain_a84c596ac8de5c34a0cba1f359339c6d0}\label{classTerrain_a84c596ac8de5c34a0cba1f359339c6d0}} 
+void \mbox{\hyperlink{classTerrain_a84c596ac8de5c34a0cba1f359339c6d0}{init\+Pt}} ()
+\begin{DoxyCompactList}\small\item\em Incremente de 1 le dernier checkpoint passee de la voiture v. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe gerant le terrain Cette classe contient la carte des murs/route/... et les checkpoints ainsi que les points de passage pour les IA. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Terrain.\+h\item 
+Terrain.\+cpp\end{DoxyCompactItemize}

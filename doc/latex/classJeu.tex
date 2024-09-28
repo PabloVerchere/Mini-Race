@@ -1,0 +1,50 @@
+\hypertarget{classJeu}{}\doxysection{Jeu Class Reference}
+\label{classJeu}\index{Jeu@{Jeu}}
+
+
+Classe de jeu du mode Texte Classe qui connecte terrain a voiture et qui gere la partie.  
+
+
+
+
+{\ttfamily \#include $<$Jeu.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJeu_aa7924834c6891b1b76ff88324861ba5a}\label{classJeu_aa7924834c6891b1b76ff88324861ba5a}} 
+\mbox{\hyperlink{classJeu_aa7924834c6891b1b76ff88324861ba5a}{Jeu}} (const std\+::string \&nom\+\_\+fichier)
+\begin{DoxyCompactList}\small\item\em Tableau des 4 voitures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a9cd19e73df169d7f09397be61ba8548c}\label{classJeu_a9cd19e73df169d7f09397be61ba8548c}} 
+\mbox{\hyperlink{classJeu_a9cd19e73df169d7f09397be61ba8548c}{$\sim$\+Jeu}} ()
+\begin{DoxyCompactList}\small\item\em Construit la partie sur le terrain de nom, nom\+\_\+fichier, en initialisant les voitures et en les placant au depart. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a012cf578e55083558b0df67c82618cde}\label{classJeu_a012cf578e55083558b0df67c82618cde}} 
+void \mbox{\hyperlink{classJeu_a012cf578e55083558b0df67c82618cde}{debut}} () const
+\begin{DoxyCompactList}\small\item\em Destructeur par defaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_ad117593a6b38d4f88d8621eda52d8a3c}\label{classJeu_ad117593a6b38d4f88d8621eda52d8a3c}} 
+void \mbox{\hyperlink{classJeu_ad117593a6b38d4f88d8621eda52d8a3c}{MAJcp\+Voiture}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le logo puis les controle du jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a695400afd0723164b15e4f7ba219676c}\label{classJeu_a695400afd0723164b15e4f7ba219676c}} 
+bool \mbox{\hyperlink{classJeu_a695400afd0723164b15e4f7ba219676c}{collision}} (const \mbox{\hyperlink{classVoiture}{Voiture}} \&voiture, const \mbox{\hyperlink{classTerrain}{Terrain}} \&T)
+\begin{DoxyCompactList}\small\item\em Verifie que les voitures passe les checkpoints dans l\textquotesingle{}odre et affiche si une voiture a fini 1 tour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a6784972bf2ea70c385aae232d53bc853}\label{classJeu_a6784972bf2ea70c385aae232d53bc853}} 
+bool \mbox{\hyperlink{classJeu_a6784972bf2ea70c385aae232d53bc853}{mouvement}} (char touche)
+\begin{DoxyCompactList}\small\item\em Verifie les collisions entre voitures et avec le terrain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_a4b5b107671761a6bb963475bf4ecc8dd}\label{classJeu_a4b5b107671761a6bb963475bf4ecc8dd}} 
+\mbox{\hyperlink{classTerrain}{Terrain}} \& \mbox{\hyperlink{classJeu_a4b5b107671761a6bb963475bf4ecc8dd}{get\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Bouge les voitures en fonctions de la touche, touche. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_aaaf448e046275ad5f065a41dc1e21874}\label{classJeu_aaaf448e046275ad5f065a41dc1e21874}} 
+\mbox{\hyperlink{classVoiture}{Voiture}} \& \mbox{\hyperlink{classJeu_aaaf448e046275ad5f065a41dc1e21874}{get\+Voiture}} (unsigned int i)
+\begin{DoxyCompactList}\small\item\em Retourne le terrain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeu_ab57ac211fa821324cdc31bd276f78c35}\label{classJeu_ab57ac211fa821324cdc31bd276f78c35}} 
+void \mbox{\hyperlink{classJeu_ab57ac211fa821324cdc31bd276f78c35}{afficher\+Txt}} () const
+\begin{DoxyCompactList}\small\item\em Retourne la voiture i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de jeu du mode Texte Classe qui connecte terrain a voiture et qui gere la partie. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Jeu.\+h\item 
+Jeu.\+cpp\end{DoxyCompactItemize}

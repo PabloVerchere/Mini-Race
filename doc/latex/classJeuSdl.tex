@@ -1,0 +1,193 @@
+\hypertarget{classJeuSdl}{}\doxysection{Jeu\+Sdl Class Reference}
+\label{classJeuSdl}\index{JeuSdl@{JeuSdl}}
+
+
+Classe de jeu en mode Graphique qui connecte terrain et voiture Classe principale du mode graphique qui gere la partie.  
+
+
+
+
+{\ttfamily \#include $<$Jeu\+Sdl.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJeuSdl_a0c38648b0175920d149404ba3a3f21eb}{Jeu\+Sdl}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Temps de reference au lancement de la partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJeuSdl_a71ccadf1141e9ee9b232b3c260f6e92f}{init\+Terrain}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$Textures) const
+\begin{DoxyCompactList}\small\item\em Destructeur par defaut. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJeuSdl_ae1af8c0701879e9956b7f8ecd37a7da4}{init\+Voiture}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$Textures)
+\begin{DoxyCompactList}\small\item\em Charge les textures des voitures. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classJeuSdl_a052d0799ead77c83a8595048296377ed}{debut}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, unsigned int \&nb\+\_\+tour, unsigned int \&nb\+\_\+voitures)
+\begin{DoxyCompactList}\small\item\em Affiche le menu de selection du terrain, nombre de tours et de voitures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_aefa53fc37c6a0965bc43c1238f6b0ae3}\label{classJeuSdl_aefa53fc37c6a0965bc43c1238f6b0ae3}} 
+void \mbox{\hyperlink{classJeuSdl_aefa53fc37c6a0965bc43c1238f6b0ae3}{timer}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, int TILE\+\_\+\+SIZE, SDL\+\_\+\+Texture $\ast$$\ast$\mbox{\hyperlink{classTerrain}{Terrain}}, SDL\+\_\+\+Texture $\ast$$\ast$VoitureT, SDL\+\_\+\+Texture $\ast$$\ast$Voiture\+TC)
+\begin{DoxyCompactList}\small\item\em Fait un decompte de 3 secondes avant le depart. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a355768892d6c6a02842fd8c43ca603d9}\label{classJeuSdl_a355768892d6c6a02842fd8c43ca603d9}} 
+float {\bfseries get\+Temps} ()
+\item 
+\mbox{\Hypertarget{classJeuSdl_a2af0f9cad295a6a2c3ae97da6422d0fe}\label{classJeuSdl_a2af0f9cad295a6a2c3ae97da6422d0fe}} 
+void \mbox{\hyperlink{classJeuSdl_a2af0f9cad295a6a2c3ae97da6422d0fe}{set\+Temps}} (clock\+\_\+t temps\+\_\+)
+\begin{DoxyCompactList}\small\item\em Retourne de temps au debut, non lisible car en nombre de clicks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a660ea7e0a7f633032203e549d9a8660b}\label{classJeuSdl_a660ea7e0a7f633032203e549d9a8660b}} 
+float \mbox{\hyperlink{classJeuSdl_a660ea7e0a7f633032203e549d9a8660b}{temps}} (clock\+\_\+t temps0)
+\begin{DoxyCompactList}\small\item\em Set temps\+Debut a temps\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a4518e5e3c787a0b73f07298c9554d6f8}\label{classJeuSdl_a4518e5e3c787a0b73f07298c9554d6f8}} 
+void \mbox{\hyperlink{classJeuSdl_a4518e5e3c787a0b73f07298c9554d6f8}{affiche\+Temps}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, float temps0)
+\begin{DoxyCompactList}\small\item\em Retourne le temps en secondes depuis temps0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a4d95e921e4c3c923be0b193ff91f940b}\label{classJeuSdl_a4d95e921e4c3c923be0b193ff91f940b}} 
+void \mbox{\hyperlink{classJeuSdl_a4d95e921e4c3c923be0b193ff91f940b}{affiche\+Terrain}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$Textures, int TILE\+\_\+\+SIZE) const
+\begin{DoxyCompactList}\small\item\em Affiche le temps temps0 dans la fenetre, en haut au centre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a8d74e68952baa2ad208a5e4a5d31cf3a}\label{classJeuSdl_a8d74e68952baa2ad208a5e4a5d31cf3a}} 
+void \mbox{\hyperlink{classJeuSdl_a8d74e68952baa2ad208a5e4a5d31cf3a}{affiche\+Voitures}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$Textures, int TILE\+\_\+\+SIZE) const
+\begin{DoxyCompactList}\small\item\em Affiche le terraint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a093e4383adbc7d7ab065acbcd704266a}\label{classJeuSdl_a093e4383adbc7d7ab065acbcd704266a}} 
+void \mbox{\hyperlink{classJeuSdl_a093e4383adbc7d7ab065acbcd704266a}{affiche\+Classement}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$Textures, int nb\+Tour)
+\begin{DoxyCompactList}\small\item\em Affiche les voitures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ab13fd21369c390fd14f43d81a849faa9}\label{classJeuSdl_ab13fd21369c390fd14f43d81a849faa9}} 
+SDL\+\_\+\+Texture $\ast$$\ast$ \mbox{\hyperlink{classJeuSdl_ab13fd21369c390fd14f43d81a849faa9}{Maj\+Classement}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$$\ast$v\+Text, int nb\+Tour)
+\begin{DoxyCompactList}\small\item\em Affiche le classement des voitures en jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a23827d933941d7aab686032d642ac6ef}\label{classJeuSdl_a23827d933941d7aab686032d642ac6ef}} 
+void \mbox{\hyperlink{classJeuSdl_a23827d933941d7aab686032d642ac6ef}{avancer\+IA}} (int TILE\+\_\+\+SIZE)
+\begin{DoxyCompactList}\small\item\em Compare les voitures v1 et v2 et retourne 1 si la voiture 1 est devant, 0 sinon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a822d7bfbf1077c8ffaf24cc26e9bd26b}\label{classJeuSdl_a822d7bfbf1077c8ffaf24cc26e9bd26b}} 
+void \mbox{\hyperlink{classJeuSdl_a822d7bfbf1077c8ffaf24cc26e9bd26b}{depart\+Voitures}} (int TILE\+\_\+\+SIZE)
+\begin{DoxyCompactList}\small\item\em Fait jouer les IA, en passant par les points de passage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ab2eb945be83f59c1f0061f1c0534d2f6}\label{classJeuSdl_ab2eb945be83f59c1f0061f1c0534d2f6}} 
+bool \mbox{\hyperlink{classJeuSdl_ab2eb945be83f59c1f0061f1c0534d2f6}{collision}} (int idV)
+\begin{DoxyCompactList}\small\item\em Place les voitures au depart. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJeuSdl_aa54c49fc0fcb6571d5fdaf016035e6cb}{souris\+Co\+Entre}} (\mbox{\hyperlink{classVect2D}{Vect2D}} X, \mbox{\hyperlink{classVect2D}{Vect2D}} Y, \mbox{\hyperlink{classVect2D}{Vect2D}} pos)
+\begin{DoxyCompactList}\small\item\em Verifie si la voitures idV est en collision avec un autre voitures ou le terrain, et double sa vitesse si elle est sur un boost. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_aa0829636f333ae2dcc3bf05fee5243f0}\label{classJeuSdl_aa0829636f333ae2dcc3bf05fee5243f0}} 
+bool {\bfseries est\+\_\+fini} ()
+\item 
+\mbox{\Hypertarget{classJeuSdl_ac2ef4985d4ca21b343816ded81f37258}\label{classJeuSdl_ac2ef4985d4ca21b343816ded81f37258}} 
+void \mbox{\hyperlink{classJeuSdl_ac2ef4985d4ca21b343816ded81f37258}{fin}} (SDL\+\_\+\+Window $\ast$main, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Verifie si le jeu est fini, ie\+: si toute les voitures sont invisibles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a86172e7a09ca89d301df6070fc5aa9a9}\label{classJeuSdl_a86172e7a09ca89d301df6070fc5aa9a9}} 
+\mbox{\hyperlink{classTerrain}{Terrain}} \& \mbox{\hyperlink{classJeuSdl_a86172e7a09ca89d301df6070fc5aa9a9}{get\+Terrain}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le classement de fin et les temps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ac5ff69c120da09ae985c3d6f0ce61dac}\label{classJeuSdl_ac5ff69c120da09ae985c3d6f0ce61dac}} 
+\mbox{\hyperlink{classVoiture}{Voiture}} \& \mbox{\hyperlink{classJeuSdl_ac5ff69c120da09ae985c3d6f0ce61dac}{get\+Voiture}} (unsigned int i)
+\begin{DoxyCompactList}\small\item\em Retourne le terrain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a0d701853cda98e1fe3e4e2c23390d9dd}\label{classJeuSdl_a0d701853cda98e1fe3e4e2c23390d9dd}} 
+void \mbox{\hyperlink{classJeuSdl_a0d701853cda98e1fe3e4e2c23390d9dd}{set\+Voiture}} (unsigned int i, const \mbox{\hyperlink{classVoiture}{Voiture}} \&V)
+\begin{DoxyCompactList}\small\item\em Retourne la voiture i. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ac0a0e117cc656ed00d3f8e1446e38173}\label{classJeuSdl_ac0a0e117cc656ed00d3f8e1446e38173}} 
+unsigned int \mbox{\hyperlink{classJeuSdl_ac0a0e117cc656ed00d3f8e1446e38173}{get\+Nb\+Tour}} () const
+\begin{DoxyCompactList}\small\item\em Set la voiture i a V. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_aac3299df88d7c96d3ba8f02498fc6ad5}\label{classJeuSdl_aac3299df88d7c96d3ba8f02498fc6ad5}} 
+void \mbox{\hyperlink{classJeuSdl_aac3299df88d7c96d3ba8f02498fc6ad5}{set\+Nb\+Tour}} (unsigned int nb\+Tour\+\_\+)
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de tour a effectuer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ac4463913f9be3d302d684b8234a19662}\label{classJeuSdl_ac4463913f9be3d302d684b8234a19662}} 
+unsigned int \mbox{\hyperlink{classJeuSdl_ac4463913f9be3d302d684b8234a19662}{get\+Nb\+Voitures}} () const
+\begin{DoxyCompactList}\small\item\em Set le nombre de tour a effectuer a nb\+Tour\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_a641e7955b511794eb6e62a6e43262348}\label{classJeuSdl_a641e7955b511794eb6e62a6e43262348}} 
+void \mbox{\hyperlink{classJeuSdl_a641e7955b511794eb6e62a6e43262348}{set\+Nb\+Voitures}} (unsigned int nb\+Voitures\+\_\+)
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de voitures en jeu (1-\/4) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJeuSdl_ab39eef31839b71627283df18cdcad820}\label{classJeuSdl_ab39eef31839b71627283df18cdcad820}} 
+void \mbox{\hyperlink{classJeuSdl_ab39eef31839b71627283df18cdcad820}{stop\+Invisible}} ()
+\begin{DoxyCompactList}\small\item\em Set le nombre de voitures en jeu a nb\+Voitures\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJeuSdl_a6ce5142f6624c2f44f20a09184835f3f}\label{classJeuSdl_a6ce5142f6624c2f44f20a09184835f3f}} 
+static bool \mbox{\hyperlink{classJeuSdl_a6ce5142f6624c2f44f20a09184835f3f}{comparaison}} (const \mbox{\hyperlink{classVoiture}{Voiture}} \&v1, const \mbox{\hyperlink{classVoiture}{Voiture}} \&v2)
+\begin{DoxyCompactList}\small\item\em Met a jour le classement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de jeu en mode Graphique qui connecte terrain et voiture Classe principale du mode graphique qui gere la partie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJeuSdl_a0c38648b0175920d149404ba3a3f21eb}\label{classJeuSdl_a0c38648b0175920d149404ba3a3f21eb}} 
+\index{JeuSdl@{JeuSdl}!JeuSdl@{JeuSdl}}
+\index{JeuSdl@{JeuSdl}!JeuSdl@{JeuSdl}}
+\doxysubsubsection{\texorpdfstring{JeuSdl()}{JeuSdl()}}
+{\footnotesize\ttfamily Jeu\+Sdl\+::\+Jeu\+Sdl (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{main,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Temps de reference au lancement de la partie. 
+
+Affiche le menu de selection du terrain, nombre de tour et de voitures. Init les checkpoints, les points de passages, et places les voitures au depart 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJeuSdl_a052d0799ead77c83a8595048296377ed}\label{classJeuSdl_a052d0799ead77c83a8595048296377ed}} 
+\index{JeuSdl@{JeuSdl}!debut@{debut}}
+\index{debut@{debut}!JeuSdl@{JeuSdl}}
+\doxysubsubsection{\texorpdfstring{debut()}{debut()}}
+{\footnotesize\ttfamily std\+::string Jeu\+Sdl\+::debut (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{main,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{unsigned int \&}]{nb\+\_\+tour,  }\item[{unsigned int \&}]{nb\+\_\+voitures }\end{DoxyParamCaption})}
+
+
+
+Affiche le menu de selection du terrain, nombre de tours et de voitures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+tour} & Retourne le nombre de tours a effectuer \\
+\hline
+{\em nb\+\_\+voitures} & Retourne le nombre de voitures qui joue la partie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne le nom du terrain pour la partie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJeuSdl_a71ccadf1141e9ee9b232b3c260f6e92f}\label{classJeuSdl_a71ccadf1141e9ee9b232b3c260f6e92f}} 
+\index{JeuSdl@{JeuSdl}!initTerrain@{initTerrain}}
+\index{initTerrain@{initTerrain}!JeuSdl@{JeuSdl}}
+\doxysubsubsection{\texorpdfstring{initTerrain()}{initTerrain()}}
+{\footnotesize\ttfamily void Jeu\+Sdl\+::init\+Terrain (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Texture $\ast$$\ast$}]{Textures }\end{DoxyParamCaption}) const}
+
+
+
+Destructeur par defaut. 
+
+Charge les textures utilisees dans le terrain 
+\begin{DoxyParams}{Parameters}
+{\em Textures} & Textures du terrain a chargees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeuSdl_ae1af8c0701879e9956b7f8ecd37a7da4}\label{classJeuSdl_ae1af8c0701879e9956b7f8ecd37a7da4}} 
+\index{JeuSdl@{JeuSdl}!initVoiture@{initVoiture}}
+\index{initVoiture@{initVoiture}!JeuSdl@{JeuSdl}}
+\doxysubsubsection{\texorpdfstring{initVoiture()}{initVoiture()}}
+{\footnotesize\ttfamily void Jeu\+Sdl\+::init\+Voiture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Texture $\ast$$\ast$}]{Textures }\end{DoxyParamCaption})}
+
+
+
+Charge les textures des voitures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Textures} & Textures du terrain a chargees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJeuSdl_aa54c49fc0fcb6571d5fdaf016035e6cb}\label{classJeuSdl_aa54c49fc0fcb6571d5fdaf016035e6cb}} 
+\index{JeuSdl@{JeuSdl}!sourisCoEntre@{sourisCoEntre}}
+\index{sourisCoEntre@{sourisCoEntre}!JeuSdl@{JeuSdl}}
+\doxysubsubsection{\texorpdfstring{sourisCoEntre()}{sourisCoEntre()}}
+{\footnotesize\ttfamily bool Jeu\+Sdl\+::souris\+Co\+Entre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVect2D}{Vect2D}}}]{X,  }\item[{\mbox{\hyperlink{classVect2D}{Vect2D}}}]{Y,  }\item[{\mbox{\hyperlink{classVect2D}{Vect2D}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Verifie si la voitures idV est en collision avec un autre voitures ou le terrain, et double sa vitesse si elle est sur un boost. 
+
+Retourne 1 si la souris est dans le rectangle X, Y 
+\begin{DoxyParams}{Parameters}
+{\em X} & Coordonnee en haut a gauche du rectangle \\
+\hline
+{\em Y} & Coordonne en bas a droite du rectangle \\
+\hline
+{\em pos} & Coordonne de la souris \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne si la souris est dans le rectangle 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Jeu\+Sdl.\+h\item 
+Jeu\+Sdl.\+cpp\end{DoxyCompactItemize}
